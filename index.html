@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="container">
+        <h1>Tính tiền tip</h1>
+        <div id="calculator">
+
+
+            <form>
+                <p>Nhập tổng số tiền trên bill
+                    <p>
+                        $ <input id="billamt" type="text" placeholder="Tổng hóa đơn">
+
+                        <p>Bạn có hài lòng với dịch vụ ?
+                            <p>
+                                <select id="serviceQual">
+            <option disabled selected value="0">-- Vui lòng chọn --</option>
+            <option value="0.3">30 - Cực kì hài lòng</option>
+            <option value="0.2">20 - Hài lòng</option>
+            <option value="0.15">15- Tạm ổn</option>
+            <option value="0.1">10 - Không hài lòng</option>
+            <option value="0.05">5 - Hơi tệ</option>
+          </select>
+
+            </form>
+            <p>Chia tiền tiếp cho bao nhiêu người?</p>
+            <input id="peopleamt" type="text" placeholder="Số người góp"> người
+            <button type="button" id="calculate">TÍNH NGAY!</button>
+
+        </div>
+        <!--calculator end-->
+        <div id="totalTip">
+            <sup>$</sup><span id="tip">0.00</span>
+            <small id="each">mỗi người</small>
+        </div>
+        <!--totalTip end-->
+
+    </div>
+    <!--container end-->
+
+    <!-- partial -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
